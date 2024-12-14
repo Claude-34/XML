@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Catalog</title>
+</head>
+<body>
+<h1>Book Catalog</h1>
+<div id="catalog"></div>
+<script>
+function loadCatalog() {
+const xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+const xmlDoc = this.responseXML;
+displayCatalog(xmlDoc);
+}
+};
+xhr.open("GET", "books.xml", true);
+xhr.send();
+}
+function displayCatalog(xmlDoc) {
+const books = xmlDoc.getElementsByTagName("book");
+const catalogDiv = document.getElementById("catalog");
+for (let i = 0; i < books.length; i++) {
+const book = books[i];
+const title =18
+book.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+const author =
+book.getElementsByTagName("author")[0].childNodes[0].nodeValue;
+const genre =
+book.getElementsByTagName("genre")[0].childNodes[0].nodeValue;
+const price =
+book.getElementsByTagName("price")[0].childNodes[0].nodeValue;
+const bookDiv = document.createElement("div");
+bookDiv.innerHTML = `
+<h2>${title}</h2>
+<p>By ${author}</p>
+<p>Genre: ${genre}</p>
+<p>Price: ${price}</p>
+`;
+catalogDiv.appendChild(bookDiv);
+}
+}
+loadCatalog();
+</script>
+</body>
+</html>

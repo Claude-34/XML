@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+<book id="1">
+<title>The Lord of the Rings</title>
+<author>J.R.R. Tolkien</author>
+<genre>Fantasy</genre>
+<price>25.00</price>
+</book>
+<book id="2">
+<title>Pride and Prejudice</title>
+<author>Jane Austen</author>
+<genre>Romance</genre>
+<price>12.50</price>
+</book>
+</catalog>
