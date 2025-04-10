@@ -4,8 +4,8 @@ This project demonstrates a simple book catalog application using XML, XML Schem
 
 ## Features
 
-*   Displays a catalog of books fetched from an XML file (`books.xml`).
-*   Uses an XML Schema (`books.xsd`) to define the structure of the XML data.
+*   Displays a catalog of books fetched from an XML file (books.xml).
+*   Uses an XML Schema (books.xsd) to define the structure of the XML data.
 *   Employs JavaScript and the DOM API to dynamically render the book information on a web page.
 *   Provides a basic example of working with XML in a web application context.
 
@@ -22,22 +22,22 @@ This project demonstrates a simple book catalog application using XML, XML Schem
 ## Project Structure
 
 *   books.xml: The XML document containing the book catalog data.
-*   `books.xsd`: The XML Schema defining the structure of the XML data.
-*   `index.html`: The HTML page that displays the book catalog.
-*   `style.css`: (Optional) CSS file for styling the page.
+*   books.xsd: The XML Schema defining the structure of the XML data.
+*   index.html: The HTML page that displays the book catalog.
+*   style.css: (Optional) CSS file for styling the page.
 
 ## How to Run
 
 1.  Clone the repository: 
-2.  Open the `index.html` file in your web browser.
+2.  Open the index.html file in your web browser.
 
 **Note:** Due to CORS (Cross-Origin Resource Sharing) policies, you might need to run a local web server to view this project correctly. You can use Python's `http.server` or a similar tool to serve the files.
 
 ## Code Explanation
 
-*   **`books.xml`:** Contains the book data in XML format.
-*   **`books.xsd`:** Defines the structure and data types for the XML document.
-*   **`index.html`:**
+*   **books.xml:** Contains the book data in XML format.
+*   **books.xsd:** Defines the structure and data types for the XML document.
+*   **index.html:**
     *   Includes JavaScript code that fetches the XML data using Ajax.
     *   Uses DOM methods to parse the XML and dynamically create HTML elements to display the book information.
 
