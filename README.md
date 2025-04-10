@@ -31,7 +31,7 @@ This project demonstrates a simple book catalog application using XML, XML Schem
 1.  Clone the repository: 
 2.  Open the index.html file in your web browser.
 
-**Note:** Due to CORS (Cross-Origin Resource Sharing) policies, you might need to run a local web server to view this project correctly. You can use Python's `http.server` or a similar tool to serve the files.
+**Note:** Due to CORS (Cross-Origin Resource Sharing) policies, you might need to run a local web server to view this project correctly. You can use Python's http.server or a similar tool to serve the files.
 
 ## Code Explanation
 
