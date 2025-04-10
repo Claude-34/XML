@@ -21,7 +21,7 @@ This project demonstrates a simple book catalog application using XML, XML Schem
 
 ## Project Structure
 
-*   `books.xml`: The XML document containing the book catalog data.
+*   books.xml: The XML document containing the book catalog data.
 *   `books.xsd`: The XML Schema defining the structure of the XML data.
 *   `index.html`: The HTML page that displays the book catalog.
 *   `style.css`: (Optional) CSS file for styling the page.
