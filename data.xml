@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rentals>
+    <car>
+        <name>Toyota Corolla</name>
+        <price>$50/day</price>
+        <location>New York</location>
+        <image>images/toyota-corolla.jpg</image>
+    </car>
+    <car>
+        <name>Honda Civic</name>
+        <price>$45/day</price>
+        <location>Los Angeles</location>
+        <image>images/honda-civic.jpg</image>
+    </car>
+    
+    <car>
+        <name>Chevrolet Tahoe</name>
+        <price>$90/day</price>
+        <location>Houston</location>
+        <image>images/chevrolet-tahoe.jpg</image>
+    </car>
+    <car>
+        <name>Mercedes-Benz E-Class</name>
+        <price>$120/day</price>
+        <location>San Francisco</location>
+        <image>images/mercedes-eclass.jpg</image>
+    </car>
+    <car>
+        <name>BMW X5</name>
+        <price>$150/day</price>
+        <location>Chicago</location>
+        <image>images/bmw-x5.jpg</image>
+    </car>
+</rentals>

@@ -1,84 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Virtual Fortune Cookie</title>
-  <style>
-    body {
-      background: #fffbe6;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      flex-direction: column;
-    }
-
-    .cookie {
-      width: 150px;
-      height: 150px;
-      background: #d4a373;
-      border-radius: 50% 50% 0 0;
-      position: relative;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    .cookie:active {
-      transform: scale(0.95);
-    }
-
-    .cookie::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 20px;
-      background: #d4a373;
-      border-radius: 0 0 50% 50%;
-    }
-
-    .fortune-text {
-        margin-top: 30px;
-      font-size: 1.2rem;
-      color: #6e2828;
-      text-align: center;
-      max-width: 300px;
-      opacity: 20;
-      transition: opacity 0.5s ease;
-    }
-
-    .show {
-      opacity: 1;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Car Rentals - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="cookie" onclick="crackCookie()"></div>
-  <div class="fortune-text" id="fortuneText">Click the cookie to reveal your fortune!</div>
-
-  <script>
-    function crackCookie() {
-      fetch('fortunes.xml')
-        .then(response => response.text())
-        .then(str => {
-          const parser = new DOMParser();
-          const xml = parser.parseFromString(str, 'application/xml');
-          const fortunes = Array.from(xml.getElementsByTagName('fortune'));
-          const randomIndex = Math.floor(Math.random() * fortunes.length);
-          const randomFortune = fortunes[randomIndex].textContent;
-
-          const fortuneText = document.getElementById('fortuneText');
-          fortuneText.textContent = randomFortune;
-          fortuneText.classList.add('show');
-        })
-        .catch(err => {
-          document.getElementById('fortuneText').textContent = "Oops! Couldn't load your fortune.";
-        });
-    }
-  </script>
+    <h1>Welcome to Car Rentals</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="register.html">Register</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div id="carList"></div>
+    <script src="script.js"></script>
 </body>
 </html>
